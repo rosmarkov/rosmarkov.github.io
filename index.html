@@ -13,6 +13,7 @@
       --link: #7cc4ff;
       --line: rgba(255,255,255,.12);
     }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -20,17 +21,20 @@
       color: var(--text);
       line-height: 1.55;
     }
+
     .wrap {
       max-width: 820px;
       margin: auto;
       padding: 3rem 1.25rem;
     }
+
     header {
       display: flex;
       align-items: center;
       gap: 1.6rem;
-      margin-bottom: 2rem;
+      margin-bottom: 2.2rem;
     }
+
     img {
       width: 136px;
       height: 136px;
@@ -39,29 +43,55 @@
       object-position: center top;
       flex-shrink: 0;
     }
+
     h1 {
       margin: 0;
       font-size: 2.4rem;
       line-height: 1.1;
     }
+
     h2 {
-      margin-top: 2.2rem;
+      margin-top: 2.4rem;
       padding-bottom: .25rem;
       border-bottom: 1px solid var(--line);
       font-size: 1.25rem;
     }
+
     a {
       color: var(--link);
       text-decoration: none;
     }
-    a:hover { text-decoration: underline; }
-    .muted { color: var(--muted); }
-    .links { margin-top: .8rem; }
-    .item { margin-bottom: .75rem; }
-    .item strong { font-weight: 650; }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .links {
+      margin-top: .8rem;
+    }
+
+    .item {
+      margin-bottom: .85rem;
+    }
+
+    .item strong {
+      font-weight: 650;
+    }
+
     @media (max-width: 620px) {
-      header { align-items: flex-start; flex-direction: column-reverse; }
-      img { width: 120px; height: 120px; }
+      header {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+      }
+
+      img {
+        width: 120px;
+        height: 120px;
+      }
     }
   </style>
 </head>
@@ -73,22 +103,26 @@
       <div>
         <h1>Rostislav Markov</h1>
         <p class="muted">Applied AI · Clinical Data Science · Cloud Architecture</p>
+
         <p>
           Principal Engineer at Amazon Web Services. I work on AI-assisted systems,
           governed data workflows, and cloud-scale architectures for regulated environments.
           Computer science at The University of Texas at Austin.
         </p>
+
         <p class="links">
           <a href="https://github.com/rosmarkov">GitHub</a> ·
           <a href="https://www.linkedin.com/in/rostislavmarkov/">LinkedIn</a> ·
-          <a href="https://aws.amazon.com/blogs/architecture/author/rmarkov/">AWS Publications</a>
+          <a href="https://medium.com/@ros.markov">Medium</a> ·
+          <a href="https://aws.amazon.com/blogs/architecture/author/rmarkov/">AWS writing</a> ·
+          <a href="https://aws.amazon.com/blogs/architecture/author-spotlight-rostislav-markov-principal-architect-in-strategic-industries/">AWS spotlight</a>
         </p>
       </div>
 
       <img src="profile.jpg" alt="Rostislav Markov" />
     </header>
 
-    <h2>Selected Publications</h2>
+    <h2>Selected Work</h2>
 
     <div class="item">
       <strong><a href="https://pharmasug.org/conferences/pharmasug-2026-us/paper-presentations/#AI-420">Specification-driven AI for reliable SDTM transformation programs</a></strong><br>
@@ -115,27 +149,33 @@
       <span class="muted">AWS Whitepaper</span>
     </div>
 
-    <h2>AWS Writing</h2>
+    <h2>Talks & Presentations</h2>
+
+    <div class="item">
+      <strong><a href="https://www.slideshare.net/slideshow/inside-bmw-s-cloud-native-devops-approach-to-application-migration-on-aws-c2b0/273593776">Inside BMW’s cloud-native DevOps approach to application migration on AWS</a></strong><br>
+      <span class="muted">Cloud-native transformation, migration factories, and platform governance</span>
+    </div>
+
+    <div class="item">
+      <strong><a href="https://www.slideshare.net/slideshow/scaling-to-billions-of-iot-devices-with-mindsphere-on-aws/273594054">Scaling to billions of IoT devices with MindSphere on AWS</a></strong><br>
+      <span class="muted">Large-scale IoT, distributed systems, and DevSecOps on AWS</span>
+    </div>
+
+    <h2>Selected AWS Writing</h2>
 
     <div class="item"><a href="https://aws.amazon.com/blogs/architecture/empower-your-teams-with-modern-architecture-governance/">Empower your teams with modern architecture governance</a></div>
     <div class="item"><a href="https://aws.amazon.com/blogs/devops/balance-deployment-speed-and-stability-with-dora-metrics/">Balance deployment speed and stability with DORA metrics</a></div>
     <div class="item"><a href="https://aws.amazon.com/blogs/mt/how-to-engage-application-teams-during-a-cloud-migration/">How to engage application teams during a cloud migration</a></div>
     <div class="item"><a href="https://aws.amazon.com/blogs/architecture/simplify-document-search-at-scale-with-intelligent-search-bot-on-aws/">Simplify document search at scale with intelligent search bot on AWS</a></div>
-    <div class="item"><a href="https://aws.amazon.com/blogs/architecture/genomics-workflows-part-7-analyze-public-rna-sequencing-data-using-aws-healthomics/">Genomics workflows: RNA sequencing analysis with AWS HealthOmics</a></div>
+    <div class="item"><a href="https://aws.amazon.com/blogs/architecture/genomics-workflows-part-7-analyze-public-rna-sequencing-data-using-aws-healthomics/">Analyze public RNA sequencing data using AWS HealthOmics</a></div>
 
     <p><a href="https://aws.amazon.com/blogs/architecture/author/rmarkov/">View more AWS articles</a></p>
 
-    <h2>Other Writing</h2>
-
-    <div class="item"><a href="https://www.cloudcomputing-insider.de/cloud-migration-am-laufenden-band-a-4de9f6c33d39d63df9a161089afb2e1e/">Cloud migration at scale</a></div>
-    <div class="item"><a href="https://www.cloudcomputing-insider.de/erfolgsfaktoren-fuer-die-modernisierung-der-unternehmens-it-a-1f008692127e7e4cb81ee847e019077c/">Modernizing enterprise IT</a></div>
-    <div class="item"><a href="https://www.industry-of-things.de/aller-anfang-die-planung-einer-iiot-plattform-a-900843/">Planning an IIoT platform</a></div>
-
-    <h2>Current Interests</h2>
+    <h2>Research Direction</h2>
 
     <p class="muted">
-      Specification-driven AI systems, reliable generated code, clinical NLP robustness,
-      and agentic systems in regulated environments.
+      Reliable AI systems, specification-driven architectures, generated-code evaluation,
+      clinical NLP robustness, and agentic systems in regulated environments.
     </p>
 
   </main>
