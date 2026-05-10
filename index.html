@@ -82,6 +82,24 @@
       font-weight: 650;
     }
 
+    .now {
+      margin-top: 1.2rem;
+      padding: .9rem 1rem;
+      background: rgba(124, 196, 255, .06);
+      border-left: 3px solid var(--link);
+      border-radius: 4px;
+    }
+
+    .year-label {
+      margin-top: 1.4rem;
+      margin-bottom: .5rem;
+      font-size: .85rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
     @media (max-width: 620px) {
       header {
         align-items: flex-start;
@@ -122,61 +140,73 @@
       <img src="profile.jpg" alt="Rostislav Markov" />
     </header>
 
+    <div class="now">
+      Currently exploring specification-driven AI for clinical data pipelines, agentic systems in regulated environments, and generated-code evaluation methods.
+    </div>
+
     <h2>Selected Work</h2>
 
     <div class="item">
       <strong><a href="https://pharmasug.org/conferences/pharmasug-2026-us/paper-presentations/#AI-420">Specification-driven AI for reliable SDTM transformation programs</a></strong><br>
-      <span class="muted">PharmaSUG 2026</span>
+      <span class="muted">PharmaSUG 2026 · Paper</span>
     </div>
 
     <div class="item">
       <strong><a href="https://phuse.s3.eu-central-1.amazonaws.com/Archive/2026/Connect/US/Austin/PAP_DV12.pdf">From black box to glass box: SDTM mapping automation with visual validation</a></strong><br>
-      <span class="muted">PHUSE US Connect 2026</span>
+      <span class="muted">PHUSE US Connect 2026 · Paper</span>
     </div>
 
     <div class="item">
       <strong><a href="https://phuse.s3.eu-central-1.amazonaws.com/Archive/2026/Connect/US/Austin/PAP_ML35.pdf">Democratizing SDTM transformations with AI-assisted function development</a></strong><br>
-      <span class="muted">PHUSE US Connect 2026</span>
+      <span class="muted">PHUSE US Connect 2026 · Paper</span>
     </div>
 
     <div class="item">
       <strong><a href="https://pub.towardsai.net/lexical-bias-in-clinical-nlp-pipelines-f6d20d635c09">Lexical Bias in Clinical NLP Pipelines</a></strong><br>
-      <span class="muted">Towards AI</span>
+      <span class="muted">Towards AI · Article</span>
+    </div>
+
+    <div class="item">
+      <strong><a href="https://aws.amazon.com/blogs/architecture/genomics-workflows-part-7-analyze-public-rna-sequencing-data-using-aws-healthomics/">Analyze public RNA sequencing data using AWS HealthOmics</a></strong><br>
+      <span class="muted">AWS · Article · Genomics</span>
     </div>
 
     <div class="item">
       <strong><a href="https://docs.aws.amazon.com/pdfs/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/cloud-driven-enterprise-transformation-on-aws.pdf">Cloud-driven enterprise transformation on AWS</a></strong><br>
-      <span class="muted">AWS Whitepaper</span>
+      <span class="muted">AWS · Whitepaper</span>
     </div>
 
-    <h2>Talks & Presentations</h2>
+    <div class="item">
+      <strong><a href="https://aws.amazon.com/blogs/architecture/empower-your-teams-with-modern-architecture-governance/">Empower your teams with modern architecture governance</a></strong><br>
+      <span class="muted">AWS · Article · Architecture</span>
+    </div>
 
     <div class="item">
-      <strong><a href="https://www.slideshare.net/slideshow/inside-bmw-s-cloud-native-devops-approach-to-application-migration-on-aws-c2b0/273593776">Inside BMW’s cloud-native DevOps approach to application migration on AWS</a></strong><br>
-      <span class="muted">Cloud-native transformation, migration factories, and platform governance</span>
+      <strong><a href="https://aws.amazon.com/blogs/devops/balance-deployment-speed-and-stability-with-dora-metrics/">Balance deployment speed and stability with DORA metrics</a></strong><br>
+      <span class="muted">AWS · Article · DevOps</span>
+    </div>
+
+    <div class="item">
+      <strong><a href="https://aws.amazon.com/blogs/mt/how-to-engage-application-teams-during-a-cloud-migration/">How to engage application teams during a cloud migration</a></strong><br>
+      <span class="muted">AWS · Article · Migration</span>
+    </div>
+
+    <div class="item">
+      <strong><a href="https://aws.amazon.com/blogs/architecture/simplify-document-search-at-scale-with-intelligent-search-bot-on-aws/">Simplify document search at scale with intelligent search bot on AWS</a></strong><br>
+      <span class="muted">AWS · Article · AI</span>
+    </div>
+
+    <div class="item">
+      <strong><a href="https://www.slideshare.net/slideshow/inside-bmw-s-cloud-native-devops-approach-to-application-migration-on-aws-c2b0/273593776">Inside BMW's cloud-native DevOps approach to application migration on AWS</a></strong><br>
+      <span class="muted">AWS · Talk · Cloud Migration</span>
     </div>
 
     <div class="item">
       <strong><a href="https://www.slideshare.net/slideshow/scaling-to-billions-of-iot-devices-with-mindsphere-on-aws/273594054">Scaling to billions of IoT devices with MindSphere on AWS</a></strong><br>
-      <span class="muted">Large-scale IoT, distributed systems, and DevSecOps on AWS</span>
+      <span class="muted">AWS · Talk · IoT</span>
     </div>
 
-    <h2>Selected AWS Writing</h2>
-
-    <div class="item"><a href="https://aws.amazon.com/blogs/architecture/empower-your-teams-with-modern-architecture-governance/">Empower your teams with modern architecture governance</a></div>
-    <div class="item"><a href="https://aws.amazon.com/blogs/devops/balance-deployment-speed-and-stability-with-dora-metrics/">Balance deployment speed and stability with DORA metrics</a></div>
-    <div class="item"><a href="https://aws.amazon.com/blogs/mt/how-to-engage-application-teams-during-a-cloud-migration/">How to engage application teams during a cloud migration</a></div>
-    <div class="item"><a href="https://aws.amazon.com/blogs/architecture/simplify-document-search-at-scale-with-intelligent-search-bot-on-aws/">Simplify document search at scale with intelligent search bot on AWS</a></div>
-    <div class="item"><a href="https://aws.amazon.com/blogs/architecture/genomics-workflows-part-7-analyze-public-rna-sequencing-data-using-aws-healthomics/">Analyze public RNA sequencing data using AWS HealthOmics</a></div>
-
-    <p><a href="https://aws.amazon.com/blogs/architecture/author/rmarkov/">View more AWS articles</a></p>
-
-    <h2>Research Direction</h2>
-
-    <p class="muted">
-      Reliable AI systems, specification-driven architectures, generated-code evaluation,
-      clinical NLP robustness, and agentic systems in regulated environments.
-    </p>
+    <p><a href="https://aws.amazon.com/blogs/architecture/author/rmarkov/">View all AWS articles →</a></p>
 
   </main>
 </body>
