@@ -6,187 +6,138 @@
   <title>Rostislav Markov</title>
 
   <style>
+    :root {
+      --bg: #0b1020;
+      --text: #edf2ff;
+      --muted: #b9c5e3;
+      --link: #7cc4ff;
+      --line: rgba(255,255,255,.12);
+    }
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #0b1020;
-      color: #edf2ff;
-      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
     }
     .wrap {
-      max-width: 900px;
+      max-width: 820px;
       margin: auto;
-      padding: 2rem 1rem;
+      padding: 3rem 1.25rem;
     }
-    h1 { font-size: 2.6rem; margin-bottom: 0.2rem; }
-    h2 { margin-top: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
-    h3 { margin-top: 1.4rem; }
-    a { color: #7cc4ff; text-decoration: none; }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      margin-bottom: 2rem;
+    }
+    img {
+      width: 136px;
+      height: 136px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      flex-shrink: 0;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      line-height: 1.1;
+    }
+    h2 {
+      margin-top: 2.2rem;
+      padding-bottom: .25rem;
+      border-bottom: 1px solid var(--line);
+      font-size: 1.25rem;
+    }
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
     a:hover { text-decoration: underline; }
-    .muted { color: #b9c5e3; }
-    .pub { margin-bottom: 0.9rem; }
+    .muted { color: var(--muted); }
+    .links { margin-top: .8rem; }
+    .item { margin-bottom: .75rem; }
+    .item strong { font-weight: 650; }
+    @media (max-width: 620px) {
+      header { align-items: flex-start; flex-direction: column-reverse; }
+      img { width: 120px; height: 120px; }
+    }
   </style>
 </head>
 
 <body>
-<div class="wrap">
+  <main class="wrap">
 
-<div style="display:flex; align-items:center; gap:2rem;">
-  <div>
-    <h1>Rostislav Markov</h1>
+    <header>
+      <div>
+        <h1>Rostislav Markov</h1>
+        <p class="muted">Applied AI · Clinical Data Science · Cloud Architecture</p>
+        <p>
+          Principal Engineer at Amazon Web Services. I work on AI-assisted systems,
+          governed data workflows, and cloud-scale architectures for regulated environments.
+          Computer science at The University of Texas at Austin.
+        </p>
+        <p class="links">
+          <a href="https://github.com/rosmarkov">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/rostislavmarkov/">LinkedIn</a> ·
+          <a href="https://aws.amazon.com/blogs/architecture/author/rmarkov/">AWS Publications</a>
+        </p>
+      </div>
+
+      <img src="profile.jpg" alt="Rostislav Markov" />
+    </header>
+
+    <h2>Selected Publications</h2>
+
+    <div class="item">
+      <strong><a href="https://pharmasug.org/conferences/pharmasug-2026-us/paper-presentations/#AI-420">Specification-driven AI for reliable SDTM transformation programs</a></strong><br>
+      <span class="muted">PharmaSUG 2026</span>
+    </div>
+
+    <div class="item">
+      <strong><a href="https://phuse.s3.eu-central-1.amazonaws.com/Archive/2026/Connect/US/Austin/PAP_DV12.pdf">From black box to glass box: SDTM mapping automation with visual validation</a></strong><br>
+      <span class="muted">PHUSE US Connect 2026</span>
+    </div>
+
+    <div class="item">
+      <strong><a href="https://phuse.s3.eu-central-1.amazonaws.com/Archive/2026/Connect/US/Austin/PAP_ML35.pdf">Democratizing SDTM transformations with AI-assisted function development</a></strong><br>
+      <span class="muted">PHUSE US Connect 2026</span>
+    </div>
+
+    <div class="item">
+      <strong><a href="https://pub.towardsai.net/lexical-bias-in-clinical-nlp-pipelines-f6d20d635c09">Lexical Bias in Clinical NLP Pipelines</a></strong><br>
+      <span class="muted">Towards AI</span>
+    </div>
+
+    <div class="item">
+      <strong><a href="https://docs.aws.amazon.com/pdfs/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/cloud-driven-enterprise-transformation-on-aws.pdf">Cloud-driven enterprise transformation on AWS</a></strong><br>
+      <span class="muted">AWS Whitepaper</span>
+    </div>
+
+    <h2>AWS Writing</h2>
+
+    <div class="item"><a href="https://aws.amazon.com/blogs/architecture/empower-your-teams-with-modern-architecture-governance/">Empower your teams with modern architecture governance</a></div>
+    <div class="item"><a href="https://aws.amazon.com/blogs/devops/balance-deployment-speed-and-stability-with-dora-metrics/">Balance deployment speed and stability with DORA metrics</a></div>
+    <div class="item"><a href="https://aws.amazon.com/blogs/mt/how-to-engage-application-teams-during-a-cloud-migration/">How to engage application teams during a cloud migration</a></div>
+    <div class="item"><a href="https://aws.amazon.com/blogs/architecture/simplify-document-search-at-scale-with-intelligent-search-bot-on-aws/">Simplify document search at scale with intelligent search bot on AWS</a></div>
+    <div class="item"><a href="https://aws.amazon.com/blogs/architecture/genomics-workflows-part-7-analyze-public-rna-sequencing-data-using-aws-healthomics/">Genomics workflows: RNA sequencing analysis with AWS HealthOmics</a></div>
+
+    <p><a href="https://aws.amazon.com/blogs/architecture/author/rmarkov/">View more AWS articles</a></p>
+
+    <h2>Other Writing</h2>
+
+    <div class="item"><a href="https://www.cloudcomputing-insider.de/cloud-migration-am-laufenden-band-a-4de9f6c33d39d63df9a161089afb2e1e/">Cloud migration at scale</a></div>
+    <div class="item"><a href="https://www.cloudcomputing-insider.de/erfolgsfaktoren-fuer-die-modernisierung-der-unternehmens-it-a-1f008692127e7e4cb81ee847e019077c/">Modernizing enterprise IT</a></div>
+    <div class="item"><a href="https://www.industry-of-things.de/aller-anfang-die-planung-einer-iiot-plattform-a-900843/">Planning an IIoT platform</a></div>
+
+    <h2>Current Interests</h2>
+
     <p class="muted">
-    Applied AI · Clinical Data Science · Specification-Driven Systems · Cloud Architecture
+      Specification-driven AI systems, reliable generated code, clinical NLP robustness,
+      and agentic systems in regulated environments.
     </p>
-  </div>
-  <img src="profile.jpg" alt="Rostislav Markov" style="width:150px; height:150px; border-radius:50%; object-fit:cover; object-position:center top; flex-shrink:0;" />
-</div>
 
-<p>
-  I work on the design of <strong>AI-assisted systems in regulated environments</strong>, with a focus on
-  specification-driven architectures, governed transformation workflows, and reliability of generated code.
-  I am principal engineer in the life sciences industry segment at Amazon Web Services in New York, NY. 
-  Computer science @ The University of Texas at Austin.
-</p>
-
-<p>
-My work sits at the intersection of:
-<ul>
-<li>AI-assisted software engineering</li>
-<li>cloud-scale data systems</li>
-<li>clinical data science</li>
-</ul>
-</p>
-
-<p>
-<a href="https://github.com/rosmarkov">GitHub</a> ·
-<a href="https://aws.amazon.com/blogs/architecture/author/rmarkov/">AWS Publications</a> ·
-<a href="https://www.linkedin.com/in/rostislavmarkov/">LinkedIn</a>
-</p>
-
-<!-- ===================== PUBLICATIONS ===================== -->
-
-<h2>Publications</h2>
-
-<h3>Conference papers and sessions</h3>
-
-<div class="pub">
-<strong>
-  <a href="https://pharmasug.org/conferences/pharmasug-2026-us/paper-presentations/#AI-420">
-    Specification-driven AI for reliable SDTM transformation programs
-  </a>
-</strong><br/>
-<span class="muted">PharmaSUG 2026</span>
-</div>
-
-<div class="pub">
-<strong>
-  <a href="https://phuse.s3.eu-central-1.amazonaws.com/Archive/2026/Connect/US/Austin/PAP_DV12.pdf">
-    From black box to glass box: A context-aware approach to SDTM mapping automation with interactive visual validation
-  </a>
-</strong><br/>
-<span class="muted">PHUSE US Connect 2026</span>
-</div>
-
-<div class="pub">
-<strong>
-  <a href="https://phuse.s3.eu-central-1.amazonaws.com/Archive/2026/Connect/US/Austin/PAP_ML35.pdf">
-    Democratizing SDTM transformations: AI-assisted function development with business-driven governance
-  </a>
-</strong><br/>
-<span class="muted">PHUSE US Connect 2026</span>
-</div>
-
-<!-- ===================== RESEARCH WRITING ===================== -->
-
-<h2>AI & Research Writing</h2>
-
-<div class="pub">
-<strong>
-<a href="https://pub.towardsai.net/lexical-bias-in-clinical-nlp-pipelines-f6d20d635c09">
-Lexical Bias in Clinical NLP Pipelines
-</a>
-</strong><br/>
-<span class="muted">
-Towards AI · Analysis of spurious correlations and robustness challenges in clinical NLP systems
-</span>
-</div>
-
-<!-- ===================== WHITEPAPER ===================== -->
-
-<h2>Whitepapers</h2>
-
-<div class="pub">
-<strong>
-<a href="https://docs.aws.amazon.com/pdfs/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/cloud-driven-enterprise-transformation-on-aws.pdf">
-Cloud-driven enterprise transformation on AWS
-</a>
-</strong><br/>
-<span class="muted">Amazon Web Services</span>
-</div>
-
-<!-- ===================== AWS ===================== -->
-
-<h2>AWS Blogs</h2>
-
-<p class="muted">
-Selected work on architecture governance, cloud migration, and large-scale data systems.
-</p>
-
-<div class="pub">
-<a href="https://aws.amazon.com/blogs/architecture/empower-your-teams-with-modern-architecture-governance/">Modern architecture governance</a>
-</div>
-
-<div class="pub">
-<a href="https://aws.amazon.com/blogs/devops/balance-deployment-speed-and-stability-with-dora-metrics/">DORA metrics in practice</a>
-</div>
-
-<div class="pub">
-<a href="https://aws.amazon.com/blogs/mt/how-to-engage-application-teams-during-a-cloud-migration/">Engaging teams in cloud migration</a>
-</div>
-
-<div class="pub">
-<a href="https://aws.amazon.com/blogs/architecture/simplify-document-search-at-scale-with-intelligent-search-bot-on-aws/">Search systems on AWS</a>
-</div>
-
-<div class="pub">
-<a href="https://aws.amazon.com/blogs/architecture/genomics-workflows-part-7-analyze-public-rna-sequencing-data-using-aws-healthomics/">Genomics workflows</a>
-</div>
-
-<p>
-<a href="https://aws.amazon.com/blogs/architecture/author/rmarkov/">View full list (28+ articles)</a>
-</p>
-
-<!-- ===================== INDUSTRY ===================== -->
-
-<h2>Industry Articles</h2>
-
-<p class="muted">
-Articles on cloud transformation, IIoT platforms, and enterprise architecture (German language).
-</p>
-
-<div class="pub">
-<a href="https://www.cloudcomputing-insider.de/cloud-migration-am-laufenden-band-a-4de9f6c33d39d63df9a161089afb2e1e/">Cloud migration at scale</a>
-</div>
-
-<div class="pub">
-<a href="https://www.cloudcomputing-insider.de/erfolgsfaktoren-fuer-die-modernisierung-der-unternehmens-it-a-1f008692127e7e4cb81ee847e019077c/">Modernizing enterprise IT</a>
-</div>
-
-<div class="pub">
-<a href="https://www.industry-of-things.de/aller-anfang-die-planung-einer-iiot-plattform-a-900843/">Planning an IIoT platform</a>
-</div>
-
-<!-- ===================== RESEARCH DIRECTION ===================== -->
-
-<h2>Interests</h2>
-
-<ul>
-<li>Specification-driven AI systems</li>
-<li>Reliability and evaluation of auto-generated code</li>
-<li>Spurious correlations in clinical NLP</li>
-<li>Agentic systems in regulated environments</li>
-</ul>
-
-</div>
+  </main>
 </body>
 </html>
